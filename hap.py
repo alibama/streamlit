@@ -18,7 +18,7 @@ data = get_data_ex5()
 gb = GridOptionsBuilder.from_dataframe(data)
 
 #make all columns editable
-gb.configure_columns(list('abcde'), editable=True)
+gb.configure_columns(list('ab'), editable=True)
 
 #Create a calculated column that updates when data is edited. Use agAnimateShowChangeCellRenderer to show changes   
 gb.configure_column('virtual column a + b', valueGetter='Number(data.a) + Number(data.b)', cellRenderer='agAnimateShowChangeCellRenderer', editable='false', type=['numericColumn'])
