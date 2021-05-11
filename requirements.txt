@@ -1,4 +1,6 @@
+pydeck
 pandas
 streamlit
 numpy
+altair
 streamlit-aggrid
