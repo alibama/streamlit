@@ -8,7 +8,7 @@ from st_aggrid import AgGrid, DataReturnMode, GridUpdateMode, GridOptionsBuilder
 def get_data_ex5():
     rows=10
     df = pd.DataFrame(
-        np.random.randint(0, 100, 2*rows).reshape(-1, 2), columns= list("ab")
+        np.random.randint(0, 100, 2*rows).reshape(-1, 2), columns= list("abc")
     )
     return df
 
